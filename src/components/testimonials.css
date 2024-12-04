@@ -1,0 +1,112 @@
+:root {
+  --main-green: #004d14;
+  --dark-green: #005a31;
+  --medium-green: #00703d;
+  --light-green: #66bb6a;
+  --pastel-green: #a5d6a7;
+  --white: #f6f7f2;
+  --orange: #ff6b18;
+  --orange2: #ff8c01;
+  --grey: #272727;
+  --black: #000;
+  --lighter-grey: #4d4d4d;
+  --darker: #e1e5dc;
+}
+
+.testimonials-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  background-color: var(--white);
+  padding: 1em;
+  margin-top: 2em;
+  border-top: 1px solid var(--pastel-green);
+}
+
+.testimonials-scroll {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: fit-content;
+}
+
+.testimonials-header {
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.testimonials-header h3 {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-left: 2em;
+}
+
+#scrollers {
+  right: 2em;
+  position: absolute;
+}
+
+#scrollers button {
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 1.75em;
+  height: 1.75em;
+  margin: 0.25em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+#scrollers button:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--pastel-green);
+}
+
+#scrollers button img {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  width: 29em;
+  padding: 0.5em;
+  box-sizing: border-box;
+  margin: 0.5em;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all 1s linear;
+}
+
+.testimonial:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  width: 10em;
+  height: 10em;
+  margin-right: 1em;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  padding-right: 0.5em;
+}
+
+.testimonial-text h4 {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.testimonial-text p {
+  text-align: justify;
+}

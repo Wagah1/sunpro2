@@ -1,0 +1,195 @@
+:root {
+  --main-green: #004d14;
+  --dark-green: #005a31;
+  --medium-green: #00703d;
+  --light-green: #66bb6a;
+  --pastel-green: #a5d6a7;
+  --white: #f6f7f2;
+  --orange: #ff6b18;
+  --orange2: #ff8c01;
+  --grey: #272727;
+  --black: #000;
+  --lighter-grey: #4d4d4d;
+  --darker: #e1e5dc;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+}
+
+#sect {
+  width: 100vw;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+}
+
+#sectors-intro {
+  width: 100vw;
+  height: fit-content;
+  align-content: center;
+  justify-items: center;
+}
+
+#sectors-intro h2 {
+  color: var(--grey);
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+}
+
+#sectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  margin: 1em auto;
+}
+
+.sector {
+  width: 20em;
+  height: 20em;
+  margin: 1.5em;
+  border-radius: 5px;
+  border: 1px solid var(--darker);
+  padding: 0;
+  background-color: var(--white);
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.sector:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sector img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.sector hr {
+  margin: 0.5em 0;
+  border: 1px solid var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  width: 90%;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em 0;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  bottom: -65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.show-cap {
+  bottom: -10%;
+  background-color: var(--white);
+  color: var(--grey);
+}
+
+.show-cap hr {
+  display: none;
+}
+
+.cap {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.shown-cap {
+  opacity: 1;
+}
+
+.cap-head {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.cap-head img {
+  width: 1em;
+  height: 1em;
+  position: relative;
+}
+
+.cap-head h3 {
+  font-weight: 300;
+  font-size: 1.25em;
+  margin: 0;
+  position: relative;
+}
+
+.serviceIcons {
+  width: 90%;
+  margin: 0.75em 0;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 0 0.75em;
+  justify-content: flex-start;
+}
+
+.serviceIcon {
+  width: 1.75em;
+  height: 1.75em;
+  padding: 0.15em;
+  margin: 0.15em;
+  border: 1px solid var(--darker);
+  border-radius: 5px;
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.serviceIcon:hover {
+  background-color: var(--darker);
+  width: fit-content;
+  padding: 0 0.5em;
+}
+
+.serviceIcon p {
+  display: none;
+}
+
+.serviceIcon:hover p {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.serviceIcon img {
+  width: 1.12em;
+  position: absolute;
+}
+
+.serviceIcon:hover img {
+  display: none;
+}
+
+.cap p {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--grey);
+  margin: 0 1em;
+  text-wrap: wrap;
+}

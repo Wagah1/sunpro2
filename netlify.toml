@@ -1,0 +1,13 @@
+[[redirects]]
+  from = "./*"
+  to = "./index.html"
+  status = 200
+
+  [build]
+  command = "npm run build"
+  publish = ".next"
+  plugins = ["@netlify/plugin-nextjs"]
+  cache = "true"
+
+[build.environment]
+  NODE_VERSION = "18"

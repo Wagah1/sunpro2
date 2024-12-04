@@ -1,0 +1,417 @@
+:root {
+  --main-green: #004d14;
+  --dark-green: #005a31;
+  --medium-green: #00703d;
+  --light-green: #66bb6a;
+  --pastel-green: #a5d6a7;
+  --white: #f6f7f2;
+  --orange: #ff6b18;
+  --orange2: #ff8c01;
+  --grey: #272727;
+  --black: #000;
+  --lighter-grey: #4d4d4d;
+  --darker: #e1e5dc;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+}
+
+#mainForm {
+  top: 4em;
+  position: relative;
+  width: 95vw;
+  margin: 2em;
+  justify-items: center;
+}
+
+#mainForm h2 {
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: var(--grey);
+  margin: 1em 0;
+}
+
+#mainForm hr {
+  border: 1px solid var(--white);
+  width: 100%;
+}
+
+#mainForm h3 {
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: var(--grey);
+  margin: 1em 0;
+}
+
+#request-type p {
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--grey);
+  position: relative;
+  margin: 1em 0;
+}
+
+#request-selection {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1em;
+  margin-bottom: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#request-selection input[type="radio"] + label {
+  width: 50%;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 0.5em 1em;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  background-color: white;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid var(--white);
+  border-radius: 3px;
+}
+
+#request-selection input[type="radio"] + label:hover {
+  background-color: var(--white);
+}
+
+#request-selection input[type="radio"]:checked + label {
+  background-color: var(--white);
+  border: 1px solid var(--darker);
+}
+
+#installation-start {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 95vw;
+  margin: 0;
+  border-radius: 5px;
+}
+
+#installation-start input[type="radio"] + label {
+  width: 50%;
+  font-size: 1.15em;
+  font-weight: 300;
+  padding: 0.5em 1em;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  background-color: white;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid var(--white);
+  border-radius: 3px;
+}
+
+#installation-start input[type="radio"] + label:hover {
+  background-color: var(--white);
+}
+
+#installation-start input[type="radio"]:checked + label {
+  background-color: var(--white);
+  border: 1px solid var(--darker);
+}
+
+#bought-details {
+  width: 95vw;
+  justify-self: center;
+  justify-items: center;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--white);
+  margin: 0;
+  padding: 1em;
+  padding-bottom: 1.5em;
+}
+
+#bought-details h4 {
+  font-size: 1.15em;
+  font-weight: 300;
+  color: var(--grey);
+}
+
+.bought-item {
+  width: 100%;
+  margin: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.bought-item label {
+  margin: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.15em;
+  font-weight: 300;
+  color: var(--grey);
+}
+
+.bought-item label input {
+  background-color: var(--white);
+  border: 1px solid var(--darker);
+  box-shadow: none;
+  padding: 0.25em 1em;
+  color: var(--grey);
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.bought-item label input:hover {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.025);
+}
+
+.bought-item label input:active,
+.bought-item label input:focus {
+  outline: 1px solid white;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.name {
+  width: 22.5em;
+}
+
+.name input {
+  width: 12.5em;
+}
+
+.size {
+  width: 15em;
+}
+
+.size input {
+  width: 7.5em;
+}
+
+.qty {
+  width: 10em;
+}
+
+.qty input {
+  width: 5em;
+}
+
+#budget-cat {
+  width: 95vw;
+  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--white);
+  margin: 0;
+  padding: 1em;
+  padding-bottom: 1.5em;
+}
+
+#budget-cat h4 {
+  font-size: 1.15em;
+  font-weight: 300;
+  color: var(--grey);
+  width: 15em;
+}
+
+#budget-cat input[type="radio"] + label {
+  width: 10em;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  background-color: white;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
+
+#budget-cat input[type="radio"] + label:hover {
+  background-color: var(--white);
+}
+
+#budget-cat input[type="radio"]:checked + label {
+  background-color: var(--white);
+  border: 1px solid var(--darker);
+}
+
+.budget-subcat {
+  width: 95vw;
+  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--white);
+  padding-bottom: 2em;
+}
+
+.budget-subcat h4 {
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--grey);
+}
+
+.budget-subcat input[type="radio"] + label {
+  width: 6em;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.25em 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  background-color: white;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
+
+.budget-subcat input[type="radio"] + label:hover {
+  background-color: var(--white);
+}
+
+.budget-subcat input[type="radio"]:checked + label {
+  background-color: var(--white);
+  border: 1px solid var(--darker);
+}
+
+#personal-info {
+  width: 95vw;
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+}
+
+#personal-info h4 {
+  font-size: 1.25em;
+  font-weight: 300;
+  color: var(--grey);
+  text-align: center;
+}
+
+#details {
+  justify-self: center;
+  margin-top: 2em;
+}
+
+#details label {
+  width: 22.5em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--grey);
+}
+
+#details label input,
+#details label textarea,
+#details label select {
+  background-color: white;
+  width: 15em;
+  border: 1px solid var(--darker);
+  box-shadow: none;
+  padding: 0.25em 1em;
+  color: var(--grey);
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#details label input:hover,
+#details label textarea:hover,
+#details label select:hover {
+  background-color: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.025);
+}
+
+#details label input:active,
+#details label input:focus,
+#details label textarea:active,
+#details label textarea:focus,
+#details label select:active,
+#details label select:focus {
+  outline: 1px solid white;
+  background-color: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sub {
+  position: relative;
+  width: 45em;
+  height: 6em;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.submit-btn {
+  position: relative;
+  color: var(--white);
+  padding: 0.3em 0.8em;
+  background-color: var(--medium-green);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1em 0.5em;
+  width: fit-content;
+  height: fit-content;
+  text-wrap: nowrap;
+}
+
+.submit-btn:hover {
+  background-color: var(--light-green);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 800px) {
+  .bought-item {
+    justify-content: flex-start;
+  }
+
+  .bought-item label {
+    width: 25em;
+    justify-content: flex-start;
+  }
+
+  .bought-item label input {
+    margin: 0 1em;
+  }
+}

@@ -1,0 +1,200 @@
+:root {
+  --main-green: #004d14;
+  --dark-green: #005a31;
+  --medium-green: #00703d;
+  --light-green: #66bb6a;
+  --pastel-green: #a5d6a7;
+  --white: #f6f7f2;
+  --orange: #ff6b18;
+  --orange2: #ff8c01;
+  --grey: #272727;
+  --black: #000;
+  --lighter-grey: #4d4d4d;
+  --darker: #e1e5dc;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+}
+
+#heaters-container {
+  padding: 1em;
+  width: 100vw;
+}
+
+#heaters-container #top {
+  align-items: center;
+  width: 95vw;
+  height: fit-content;
+  position: relative;
+  margin-top: 0;
+  margin-left: -1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#heaters-container #top h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 2;
+  text-align: left;
+  color: var(--dark-green);
+}
+
+#search label {
+  margin-right: 1em;
+}
+
+#search input {
+  padding: 0.5em 1em;
+  border: 1px solid var(--darker);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.025);
+}
+
+#search input:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#search-results {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 1em 0;
+  left: -1em;
+  width: 100vw;
+  height: fit-content;
+}
+
+#search-results .btns {
+  bottom: -17%;
+  position: absolute;
+  width: 100%;
+  height: 7.5em;
+  padding: 0.5em 0.75em;
+  color: var(--grey);
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#search-results .open-btns {
+  bottom: 0;
+  background-color: var(--light-green);
+  color: var(--white);
+}
+
+#heaters {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 1em 0;
+  left: -1em;
+  width: 100vw;
+  height: fit-content;
+  border-bottom: 2px solid var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.025);
+  background-color: white;
+}
+
+.heater {
+  height: 15em;
+  width: 12em;
+  margin: 0.5em;
+  background-color: white;
+  border: 1px solid var(--pastel-green);
+  overflow: hidden;
+  border-radius: 7px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+.heater:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.heater img {
+  width: 90%;
+  height: auto;
+}
+
+#heaters .btns {
+  position: absolute;
+  width: 100%;
+  height: 7.5em;
+  padding: 0.5em 0.75em;
+  color: var(--grey);
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+  bottom: -16.5%;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.btns-head {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btns-head h3 {
+  font-weight: 400;
+}
+
+.btns-head .bold {
+  font-weight: 500;
+}
+
+.btns-head img {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+#heaters .open-btns {
+  bottom: 0;
+  background-color: var(--light-green);
+  color: var(--white);
+}
+
+.btns .end-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.btns .end-btns button {
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--medium-green);
+  background-color: var(--light-green);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 3px;
+  line-height: 1.2;
+  align-content: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0.5em;
+  width: fit-content;
+  text-wrap: nowrap;
+}
+
+.btns .end-btns button:hover {
+  background-color: var(--medium-green);
+}

@@ -1,0 +1,49 @@
+:root {
+  --main-green: #004d14;
+  --dark-green: #005a31;
+  --medium-green: #00703d;
+  --light-green: #66bb6a;
+  --pastel-green: #a5d6a7;
+  --white: #f6f7f2;
+  --orange: #ff6b18;
+  --orange2: #ff8c01;
+  --grey: #272727;
+  --black: #000;
+  --lighter-grey: #4d4d4d;
+  --darker: #e1e5dc;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+}
+
+.scroller-container {
+  overflow: hidden;
+  width: 40em;
+  margin-top: -2em;
+  position: relative;
+  align-items: center;
+  height: 10em; /* Adjust based on your text height */
+}
+
+.scroller-text {
+  display: inline-block;
+  position: absolute;
+  color: var(--orange2);
+  font-size: 2.5em;
+  font-weight: 300;
+  transition: transform 1s linear; /* 1s scroll and delay the reset by 1s */
+}
+
+.scroller-text.scroll {
+  transform: translateX(-100%);
+}
+
+@media screen and (max-width: 600px) {
+  .scroller-container {
+    width: 90vw;
+    white-space: wrap;
+  }
+}

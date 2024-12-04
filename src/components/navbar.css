@@ -1,0 +1,238 @@
+:root {
+  --main-green: #004d14;
+  --dark-green: #005a31;
+  --medium-green: #00703d;
+  --light-green: #66bb6a;
+  --pastel-green: #a5d6a7;
+  --white: #f6f7f2;
+  --orange: #ff6b18;
+  --orange2: #ff8c01;
+  --grey: #272727;
+  --black: #000;
+  --lighter-grey: #4d4d4d;
+  --darker: #e1e5dc;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  position: sticky;
+  top: 5%;
+  z-index: 999;
+}
+
+.nav {
+  width: 90%;
+  padding: 0.5em;
+  min-height: 4em;
+  height: fit-content;
+  background: var(--white);
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border-top: 0.025em solid var(--darker);
+  border-bottom: 0.025em solid var(--darker);
+}
+
+.nav:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav img {
+  height: 3.5em;
+  margin-left: 0.5em;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  background-color: var(--white);
+}
+
+.nav img:hover {
+  transform: scale(1.075);
+}
+
+.nav-links {
+  margin: 0 0.5em;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 2em;
+  list-style-type: none;
+  width: fit-content;
+  align-items: center;
+  height: fit-content;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-weight: 300;
+  font-size: 1.15em;
+  transition: 0.3s ease-in-out;
+}
+
+.drop-link {
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 300;
+  font-size: 1.15em;
+}
+
+.navItem {
+  margin: 0 1em;
+  align-content: center;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: border 0.3s ease-in-out;
+  text-align: center;
+  height: fit-content;
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.navItem:hover {
+  background: var(--medium-green);
+}
+
+.navItem:hover .link {
+  color: white;
+}
+
+.dropMenu {
+  display: none;
+  position: absolute;
+  background: var(--white);
+  border-top: 1px solid var(--dark-green);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  z-index: 99;
+  top: 2.75em;
+  width: 12em;
+  list-style-type: none;
+  text-align: left;
+  align-items: center;
+  margin: 0 0 0 -1em;
+  padding: 0.5em;
+  transition: 0.25s ease-in-out;
+}
+
+.dropItem {
+  margin: 0.25em;
+  width: 10em;
+  padding: 0.5em 0.75em;
+  position: relative;
+  border-radius: 5px;
+  align-self: center;
+  border-bottom: 1px solid var(--darker);
+}
+
+.dropItem:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropItem::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background-color: var(--medium-green);
+  transform-origin: bottom right;
+  transition: 0.25s ease-out;
+}
+
+.dropItem:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.dropMenu:hover {
+  display: flex;
+  flex-direction: column;
+}
+
+#shop:hover #shopMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .mobile {
+    display: block;
+    width: 1.5em;
+    z-index: 99;
+    border-radius: 3px;
+    position: absolute;
+    right: 0.75em;
+    cursor: pointer;
+  }
+
+  .mobile img {
+    height: 1.25em;
+    padding: 0.25em;
+  }
+
+  nav {
+    margin-top: 1em;
+  }
+
+  .nav {
+    position: fixed;
+    height: fit-content;
+    background: none;
+    align-items: flex-start;
+    border: none;
+  }
+
+  .nav:hover {
+    box-shadow: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+    background: var(--white);
+    height: fit-content;
+    width: 15em;
+    position: absolute;
+    margin: 0;
+    margin-top: 2em;
+    right: -17.5em;
+    padding: 1.2em 0;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-links:hover {
+    transform: scale(1.02);
+  }
+
+  .open {
+    right: 0;
+  }
+
+  .navItem {
+    text-align: left;
+    padding: 0.5em 1em;
+    width: 80%;
+    border-radius: 3px;
+    margin: 0.1em 0;
+    background-color: white;
+  }
+
+  .dropMenu {
+    margin-top: -1.1em;
+    margin-left: -0.5em;
+  }
+}

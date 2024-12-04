@@ -1,0 +1,69 @@
+:root {
+  --main-green: #004d14;
+  --dark-green: #005a31;
+  --medium-green: #00703d;
+  --light-green: #66bb6a;
+  --pastel-green: #a5d6a7;
+  --white: #f6f7f2;
+  --orange: #ff6b18;
+  --orange2: #ff8c01;
+  --grey: #272727;
+  --black: #000;
+  --lighter-grey: #4d4d4d;
+  --darker: #e1e5dc;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+}
+
+#intro {
+  background-image: url("../solar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: -6em;
+}
+
+#content {
+  background: linear-gradient(
+    150deg,
+    rgb(0, 83, 192) 0,
+    rgba(0, 83, 192, 0.75) 25%,
+    rgb(0, 83, 192, 0.5) 50%,
+    rgba(0, 255, 42, 0.25) 75%,
+    rgba(0, 90, 49, 0) 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 3em;
+}
+
+#content p {
+  font-size: 2.5em;
+  font-weight: 350;
+  text-align: left;
+  color: var(--white);
+}
+
+#p {
+  width: 40em;
+}
+
+@media screen and (max-width: 600px) {
+  #p {
+    width: 90vw;
+  }
+}
