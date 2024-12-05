@@ -72,7 +72,7 @@ const BatteryForm: React.FC<BatteryFormProps> = ({ selected, onClose }) => {
           Capacity: {selected.Capacity} <br /> Voltage: {selected.Voltage}{" "}
           <br /> Type: {selected.Type}
           <br />
-          <a href={selected.datasheet} target="_blank">
+          <a href={selected.datasheet} target="_blank" rel="noreferrer">
             Datasheet
           </a>{" "}
           <br />

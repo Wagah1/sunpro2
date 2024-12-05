@@ -297,7 +297,7 @@ const NewInstallationForm: React.FC<NewInstallationFormProps> = () => {
         {installationType === "start_from_scratch" && (
           <>
             <div id="budget-cat">
-              <h4>Let's work with your budget:</h4>
+              <h4>Let&apos;s work with your budget:</h4>
               <input
                 type="radio"
                 id="cat-one"

@@ -11,6 +11,7 @@ const Partners = () => {
             className="partner"
             id="sunking"
             target="_blank"
+            rel="noreferrer"
           >
             <img src="../sunking.png" alt="SunKing" />
           </a>
@@ -19,10 +20,17 @@ const Partners = () => {
             className="partner"
             id="engie"
             target="_blank"
+            rel="noreferrer"
           >
             <img src="../engie.png" alt="Engie Energy" />
           </a>
-          <a href="https://livoltek.com/" className="partner" id="livoltek">
+          <a
+            href="https://livoltek.com/"
+            className="partner"
+            id="livoltek"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="../livoltek.png" alt="Livoltek" />
           </a>
           <a
@@ -30,10 +38,17 @@ const Partners = () => {
             className="partner"
             id="hexing"
             target="_blank"
+            rel="noreferrer"
           >
             <img src="../hexing.png" alt="Hexing Africa" />
           </a>
-          <a href="https://www.hinen.com/" className="partner" id="hinen">
+          <a
+            href="https://www.hinen.com/"
+            className="partner"
+            id="hinen"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="../hinen.png" alt="Hinen" />
           </a>
           <a
@@ -41,6 +56,7 @@ const Partners = () => {
             className="partner"
             id="biolite"
             target="_blank"
+            rel="noreferrer"
           >
             <img src="../biolite.png" alt="Biolite Energy" />
           </a>
@@ -49,6 +65,7 @@ const Partners = () => {
             className="partner"
             id="surechill"
             target="_blank"
+            rel="noreferrer"
           >
             <img src="../surechill.png" alt="Surechill" />
           </a>

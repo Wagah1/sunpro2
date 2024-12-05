@@ -177,7 +177,7 @@ const Footer = () => {
             <img src="../call.png" alt="Call us" />
             <p>
               Call:
-              <a href="tel:+254715476526" target="_blank">
+              <a href="tel:+254715476526" target="_blank" rel="noreferrer">
                 {" "}
                 +254715 476 526
               </a>
@@ -187,7 +187,11 @@ const Footer = () => {
             <img src="../whatsapp.png" alt="WhatsApp" />
             <p>
               Chat:
-              <a href="https://wa.me/+254703304650" target="_blank">
+              <a
+                href="https://wa.me/+254703304650"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
                 +254 703 304650
               </a>
@@ -197,7 +201,11 @@ const Footer = () => {
             <img src="../email.png" alt="send us an email" />
             <p>
               Email:
-              <a href="mailto:sunpro.kenya@gmail.com" target="_blank">
+              <a
+                href="mailto:sunpro.kenya@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
                 sunpro.kenya@gmail.com
               </a>

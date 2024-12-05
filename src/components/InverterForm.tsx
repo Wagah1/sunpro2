@@ -73,7 +73,7 @@ const InverterForm: React.FC<InverterFormProps> = ({ selected, onClose }) => {
           {selected.SystemVoltage} <br /> Solar Input Voltage:{" "}
           {selected.SolarInVoltage} <br /> MPPT Rating: {selected.MPPTRating}{" "}
           <br />
-          <a href={selected.datasheet} target="_blank">
+          <a href={selected.datasheet} target="_blank" rel="noreferrer">
             Datasheet
           </a>{" "}
           <br />

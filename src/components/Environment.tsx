@@ -11,10 +11,10 @@ const Environment = () => {
           <div id="take">
             <h3>Our take on energy sustainability:</h3>
             <p>
-              In today's world, we must generate energy sustainably to protect
-              nature and all its inhabitants. Moreover, everyone should have
-              access to quality, reliable energy to improve essential sectors
-              like health, education, food, and business.
+              In today&apos;s world, we must generate energy sustainably to
+              protect nature and all its inhabitants. Moreover, everyone should
+              have access to quality, reliable energy to improve essential
+              sectors like health, education, food, and business.
             </p>
           </div>
         </div>

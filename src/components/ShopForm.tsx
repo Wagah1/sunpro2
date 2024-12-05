@@ -71,7 +71,7 @@ const ShopForm: React.FC<ShopFormProps> = ({ selectedPanel, onClose }) => {
         <p>
           Open-circuit voltage: {selectedPanel.Voc} <br /> Short-circuit
           current: {selectedPanel.Isc} <br />
-          <a href={selectedPanel.datasheet} target="_blank">
+          <a href={selectedPanel.datasheet} target="_blank" rel="noreferrer">
             Datasheet
           </a>{" "}
           <br />
