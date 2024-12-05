@@ -71,7 +71,7 @@ const OrderForm: React.FC<OrderFormProps> = ({ selectedItem, onClose }) => {
   };
 
   return (
-    <div className="order-form">
+    <div className="order-form" id="order-form">
       <div className="item">
         <h3>
           Item details:

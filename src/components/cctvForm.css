@@ -65,6 +65,7 @@
 
 .cctv-det p a {
   text-decoration: 1px underline var(--grey);
+  color: var(--grey);
 }
 
 .cctv-det ul {
@@ -83,25 +84,6 @@
   height: 18em;
   display: flex;
   position: relative;
-}
-
-.cctv-form form button {
-  padding: 0.3em 0.8em;
-  background-color: var(--medium-green);
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 0.9em;
-  transition: 0.3s ease-in-out;
-  border-radius: 5px;
-  line-height: 1.5;
-  align-items: center;
-  font-size: 1em;
-  font-weight: 400;
-  margin: 1em 0.5em;
-  width: fit-content;
-  height: fit-content;
-  text-wrap: nowrap;
 }
 
 .info-detail {
@@ -144,18 +126,50 @@
   align-items: center;
 }
 
-#submit:hover {
-  background-color: var(--light-green);
+.cctv-form #submit {
+  padding: 0.3em 0.8em;
+  background-color: var(--medium-green);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1em 0.5em;
+  width: fit-content;
+  height: fit-content;
+  text-wrap: nowrap;
+}
+
+.cctv-form #submit:hover {
+  background-color: var(--dark-green);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-#close {
+.cctv-form #close {
   background-color: var(--white);
   color: var(--grey);
   font-weight: 400;
+  border: none;
+  padding: 0.3em 0.8em;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 1em;
+  margin: 1em 0.5em;
+  width: fit-content;
+  height: fit-content;
+  text-wrap: nowrap;
 }
 
-#close:hover {
+.cctv-form #close:hover {
   background-color: var(--orange);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   color: white;

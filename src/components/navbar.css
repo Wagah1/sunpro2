@@ -36,8 +36,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
-  border-top: 0.025em solid var(--darker);
-  border-bottom: 0.025em solid var(--darker);
+  border-top: 0.075em solid var(--darker);
+  border-bottom: 0.075em solid var(--darker);
 }
 
 .nav:hover {

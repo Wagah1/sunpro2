@@ -62,25 +62,6 @@
   line-height: 1.5;
 }
 
-.order-form button {
-  padding: 0.3em 0.8em;
-  border: none;
-  background-color: var(--medium-green);
-  color: white;
-  cursor: pointer;
-  font-size: 0.9em;
-  transition: 0.3s ease-in-out;
-  border-radius: 5px;
-  line-height: 1.5;
-  align-items: center;
-  font-size: 1em;
-  font-weight: 300;
-  margin: 1em 0.5em;
-  width: fit-content;
-  height: fit-content;
-  text-wrap: nowrap;
-}
-
 .order-form form {
   width: fit-content;
   display: flex;
@@ -177,18 +158,50 @@ input[type="radio"] {
   align-items: center;
 }
 
-#submit:hover {
-  background-color: var(--light-green);
+.order-form #submit {
+  padding: 0.3em 0.8em;
+  background-color: var(--medium-green);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1em 0.5em;
+  width: fit-content;
+  height: fit-content;
+  text-wrap: nowrap;
+}
+
+.order-form #submit:hover {
+  background-color: var(--dark-green);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-#close {
+.order-form #close {
   background-color: var(--white);
-  color: black;
-  font-weight: 300;
+  color: var(--grey);
+  font-weight: 400;
+  border: none;
+  padding: 0.3em 0.8em;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 1em;
+  margin: 1em 0.5em;
+  width: fit-content;
+  height: fit-content;
+  text-wrap: nowrap;
 }
 
-#close:hover {
+.order-form #close:hover {
   background-color: var(--orange);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   color: white;

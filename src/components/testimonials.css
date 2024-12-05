@@ -20,7 +20,8 @@
   background-color: var(--white);
   padding: 1em;
   margin-top: 2em;
-  border-top: 1px solid var(--pastel-green);
+  padding-left: 0;
+  border-top: 2px solid var(--darker);
 }
 
 .testimonials-scroll {
@@ -43,16 +44,17 @@
 }
 
 #scrollers {
-  right: 2em;
+  right: 4em;
   position: absolute;
 }
 
 #scrollers button {
   background: white;
   border-radius: 3px;
+  border: 1px solid var(--darker);
   cursor: pointer;
-  width: 1.75em;
-  height: 1.75em;
+  width: 2em;
+  height: 2em;
   margin: 0.25em;
   display: inline-flex;
   justify-content: center;
@@ -62,7 +64,7 @@
 
 #scrollers button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  background-color: var(--pastel-green);
+  background-color: var(--darker);
 }
 
 #scrollers button img {
@@ -73,7 +75,7 @@
 .testimonial {
   display: flex;
   align-items: center;
-  width: 29em;
+  width: 28em;
   padding: 0.5em;
   box-sizing: border-box;
   margin: 0.5em;
@@ -87,8 +89,8 @@
 }
 
 .testimonial img {
-  width: 10em;
-  height: 10em;
+  width: 11em;
+  height: 11em;
   margin-right: 1em;
   object-fit: cover;
   border-radius: 5px;
@@ -103,10 +105,14 @@
 
 .testimonial-text h4 {
   font-size: 1.1em;
-  font-weight: 300;
+  font-weight: 400;
+  opacity: 0.9;
   margin: 0;
+  line-height: 1.5;
 }
 
 .testimonial-text p {
   text-align: justify;
+  margin: 0;
+  margin-top: 0.25em;
 }

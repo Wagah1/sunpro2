@@ -145,7 +145,9 @@ const Offers: React.FC = () => {
                 <button className="share" onClick={handleShareClick}>
                   {copied ? "Link copied!" : "Share link"}
                 </button>
-                <button onClick={() => handleViewClick(item)}>View</button>
+                <a href="#order-form">
+                  <button onClick={() => handleViewClick(item)}>View</button>
+                </a>
               </div>
             </div>
           </div>
