@@ -221,6 +221,5 @@
   .sector {
     margin: 1em 0;
     width: 75%;
-    height: calc(width * 100%);
   }
 }
