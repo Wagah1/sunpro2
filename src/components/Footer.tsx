@@ -179,7 +179,7 @@ const Footer = () => {
               Call:
               <a href="tel:+254715476526" target="_blank" rel="noreferrer">
                 {" "}
-                +254715 476 526
+                +254 715 476526
               </a>
             </p>
           </div>
@@ -188,12 +188,12 @@ const Footer = () => {
             <p>
               Chat:
               <a
-                href="https://wa.me/+254703304650"
+                href="https://wa.me/+254727895108"
                 target="_blank"
                 rel="noreferrer"
               >
                 {" "}
-                +254 703 304650
+                +254 727 895108
               </a>
             </p>
           </div>

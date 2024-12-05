@@ -232,10 +232,14 @@
 }
 
 @media screen and (max-width: 700px) {
+  #solutions {
+    width: 90vw;
+  }
+
   .service {
     flex-direction: column;
-    width: 20em;
-    height: 38em;
+    width: 80%;
+    height: 32.5em;
     border: 1px solid var(--darker);
   }
 
@@ -244,16 +248,54 @@
   }
 
   #quality {
-    justify-content: center;
-    margin-top: -2em;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 1.5em;
   }
 
-  #quality h2,
-  p {
+  #quality h2 {
     text-align: center;
+    font-size: 1.75em;
+    margin: 0;
+  }
+
+  #quality p {
+    font-size: 1.25em;
+    margin: 1em 0;
+  }
+
+  #count {
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
+  }
+
+  #count p {
+    padding: 0 0.25em;
+    margin: 0;
   }
 
   #happy {
     flex-direction: column;
+  }
+
+  .words h2 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+
+  .words p {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .learn {
+    font-size: 1em;
+    padding: 0 1em;
+    bottom: 0.5em;
   }
 }

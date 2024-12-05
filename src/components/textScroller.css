@@ -31,7 +31,7 @@
 .scroller-text {
   display: inline-block;
   position: absolute;
-  color: var(--orange2);
+  color: var(--orange);
   font-size: 2.5em;
   font-weight: 300;
   transition: transform 1s linear; /* 1s scroll and delay the reset by 1s */
@@ -43,7 +43,14 @@
 
 @media screen and (max-width: 600px) {
   .scroller-container {
-    width: 90vw;
+    width: 75%;
     white-space: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .scroller-text {
+    font-size: 1.75em;
+    text-align: center;
   }
 }

@@ -1,9 +1,6 @@
 import "./environment.css";
 
 const Environment = () => {
-  const Relax = () => {
-    alert("Relax, what do you want to learn : )");
-  };
   return (
     <>
       <div id="env">
@@ -18,7 +15,6 @@ const Environment = () => {
             </p>
           </div>
         </div>
-        <button onClick={Relax}>Learn more</button>
       </div>
     </>
   );

@@ -216,4 +216,28 @@
   #footer {
     flex-wrap: wrap;
   }
+
+  .contact-form {
+    height: max-content;
+  }
+
+  .fields {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.5em;
+  }
+
+  .fields label {
+    width: 90%;
+    margin: 0.25em;
+  }
+
+  .contact-details {
+    width: 90vw;
+    align-items: center;
+  }
+
+  .contact-details p {
+    width: 75%;
+  }
 }

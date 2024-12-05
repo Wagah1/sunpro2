@@ -32,20 +32,17 @@
 
 .testimonials-header {
   align-items: center;
-  width: 100vw;
+  width: 75vw;
   display: flex;
+  padding: 0 1em;
+  justify-content: space-between;
   margin-bottom: 1em;
+  justify-self: center;
 }
 
 .testimonials-header h3 {
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: 300;
-  margin-left: 2em;
-}
-
-#scrollers {
-  right: 4em;
-  position: absolute;
 }
 
 #scrollers button {
@@ -93,7 +90,7 @@
   height: 11em;
   margin-right: 1em;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .testimonial-text {
@@ -115,4 +112,18 @@
   text-align: justify;
   margin: 0;
   margin-top: 0.25em;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial {
+    flex-direction: column;
+    width: 45vw;
+    height: max-content;
+    align-items: center;
+  }
+
+  .testimonial img {
+    width: 100%;
+    margin: 0;
+  }
 }

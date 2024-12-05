@@ -71,38 +71,31 @@
   margin-left: 2.5em;
 }
 
-#env button {
-  background-color: var(--white);
-  color: var(--grey);
-  border-radius: 5px;
-  line-height: 1.2;
-  width: fit-content;
-  padding: 0.5em 1em;
-  border: none;
-  align-content: center;
-  font-size: 1em;
-  position: absolute;
-  right: 3em;
-  bottom: 2em;
-  cursor: pointer;
-  font-weight: 300;
-  transition: 0.3s ease-in-out;
-}
-
-#env button:hover {
-  transform: scale(1.05);
-}
-
 @media screen and (max-width: 800px) {
+  #env {
+    height: 30em;
+  }
+
+  #cont {
+    height: 100%;
+    align-items: center;
+  }
+
   #take {
     width: 75%;
+    height: fit-content;
+    padding: 0;
   }
 
   #take h3 {
-    font-size: 2em;
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0;
   }
 
   #take p {
     font-size: 1.25em;
+    text-align: center;
+    margin: 1em 0;
   }
 }

@@ -78,3 +78,20 @@
   line-height: 1.5;
   text-align: justify;
 }
+
+@media screen and (max-width: 600px) {
+  .step {
+    width: 75%;
+    height: fit-content;
+  }
+
+  #roadmap h3 {
+    width: 90vw;
+    font-size: 1.75em;
+    text-wrap: wrap;
+  }
+
+  #steps {
+    width: 90vw;
+  }
+}
